@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="search_hint">input request</string>
+    <string name="search_rquest_text">Search rquest text</string>
+    <string name="request_parameters">Request parameters</string>
+    <string name="profle_button">profle button</string>
+    <string name="app_settings">App settings</string>
 </resources>
