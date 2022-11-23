@@ -76,20 +76,4 @@
         app:layout_constraintTop_toTopOf="@+id/imageView"
         tools:layout_editor_absoluteX="119dp" />
 
-    <SearchView
-        android:id="@+id/search_bar"
-        android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:clickable="true"
-        android:commitIcon="@drawable/search50x50px"
-        android:contentDescription="@string/search_rquest_text"
-        android:focusedByDefault="true"
-        android:foregroundTintMode="multiply"
-        android:hapticFeedbackEnabled="true"
-        android:iconifiedByDefault="true"
-        android:queryHint="input query"
-        app:barrierAllowsGoneWidgets="false"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="200dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
