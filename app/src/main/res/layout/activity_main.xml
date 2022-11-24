@@ -6,39 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:contentDescription="@string/logo_of_yal_arba"
-        app:layout_constraintEnd_toEndOf="@+id/search_bar"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/search_bar"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"
-        tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@drawable/logo150x150" />
-
-    <EditText
-        android:id="@+id/search_bar"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="277dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="376dp"
-        android:layout_marginBottom="21dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/search_hint"
-        android:inputType="textPersonName|text"
-        android:singleLine="true"
-        android:textAlignment="center"
-        android:textColorHint="#757575"
-        app:layout_constraintBottom_toTopOf="@+id/search_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
@@ -68,44 +35,44 @@
         app:layout_constraintGuide_begin="395dp" />
 
     <ImageButton
-        android:id="@+id/search_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginBottom="216dp"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="@string/search_rquest_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/parameters"
+        android:id="@+id/parameters"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="#00FFFFFF"
+        android:clickable="true"
+        android:contentDescription="@string/request_parameters"
+        app:layout_constraintStart_toStartOf="@+id/search_bar"
         app:layout_constraintTop_toBottomOf="@+id/search_bar"
-        app:srcCompat="@drawable/search50x50px"
+        app:srcCompat="@drawable/params50x50px"
         tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
     <ImageButton
-        android:id="@+id/parameters"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="174dp"
+        android:id="@+id/search_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="36dp"
         android:background="#00FFFFFF"
-        android:contentDescription="@string/request_parameters"
-        app:layout_constraintEnd_toStartOf="@+id/search_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/search_button"
-        app:srcCompat="@drawable/params50x50px"
-        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+        android:clickable="true"
+        android:contentDescription="@string/search_button"
+        app:layout_constraintEnd_toEndOf="@+id/search_bar"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar"
+        app:srcCompat="@drawable/search50x50px"
+        tools:ignore="RedundantDescriptionCheck,ImageContrastCheck" />
 
     <ImageButton
         android:id="@+id/profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
         android:background="#00FFFFFF"
+        android:clickable="true"
         android:contentDescription="@string/profle_button"
-        app:layout_constraintEnd_toEndOf="@+id/settings"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/prifile50x50px"
         tools:ignore="SpeakableTextPresentCheck,RedundantDescriptionCheck,RedundantDescriptionCheck" />
 
@@ -113,13 +80,47 @@
         android:id="@+id/settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="17dp"
         android:background="#00FFFFFF"
+        android:clickable="true"
         android:contentDescription="@string/app_settings"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile"
         app:srcCompat="@drawable/settings50x50px"
         tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/search_bar"
+        android:layout_width="376dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTintMode="multiply"
+        android:enabled="true"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="true"
+        android:fontFamily="@font/jura_variable_font_wght"
+        android:hint="@string/input_search_request"
+        android:inputType="text"
+        android:justificationMode="inter_word"
+        android:singleLine="true"
+        android:textColorHint="#3F3F3F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="140dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo150x150"
+        tools:ignore="ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

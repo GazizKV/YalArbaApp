@@ -7,4 +7,8 @@
     <string name="profle_button">profle button</string>
     <string name="app_settings">App settings</string>
     <string name="firma_name">Ял Арба</string>
+    <string name="search_button">search button</string>
+    <string name="input_search_request">input search request</string>
+    <string name="search_request">search request</string>
+    <string name="todo">logo</string>
 </resources>
