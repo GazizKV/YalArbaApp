@@ -13,21 +13,21 @@
         android:theme="@style/Theme.YalArbaApp"
         tools:targetApi="31">
         <activity
-            android:name=".Authentication"
+            android:name=".auth.Authentication"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Registration"
+            android:name=".auth.Registration"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".SearchResults"
+            android:name=".searchresults.SearchResults"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
