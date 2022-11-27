@@ -11,4 +11,6 @@
     <string name="input_search_request">input search request</string>
     <string name="search_request">search request</string>
     <string name="todo">logo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

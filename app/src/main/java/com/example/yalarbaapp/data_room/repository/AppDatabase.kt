@@ -9,14 +9,3 @@ import com.example.yalarbaapp.data_room.model.InfoCard
 abstract class AppDatabase : RoomDatabase() {
     abstract fun infoCardDAO(): InfoCardDAO
 }
-
-
-/**
-val db = Room.databaseBuilder(
-applicationcontext,
-AppDatabase::class.java, "database-name"
-).build()
-
- val userDao = db.infocardDAO()
- val user: LIst<InfoCard> = InfoCardDAO.getAll()
- */
