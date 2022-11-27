@@ -4,8 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import com.example.yalarbaapp.searchresults.SearchResults
 
 class MainActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -14,4 +17,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity, SearchResults::class.java))
         }
     }
+
 }

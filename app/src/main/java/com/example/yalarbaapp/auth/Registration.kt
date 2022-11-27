@@ -1,11 +1,12 @@
-package com.example.yalarbaapp
+package com.example.yalarbaapp.auth
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.yalarbaapp.R
 
-class SearchResults : AppCompatActivity() {
+class Registration : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_search_results)
+        setContentView(R.layout.activity_registration)
     }
 }
