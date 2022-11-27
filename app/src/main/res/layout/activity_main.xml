@@ -6,12 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="395dp" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier2"
@@ -19,20 +13,6 @@
         android:layout_height="wrap_content"
         app:barrierDirection="top"
         tools:layout_editor_absoluteY="731dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="16dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="395dp" />
 
     <ImageButton
         android:id="@+id/parameters"
@@ -122,5 +102,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo150x150"
         tools:ignore="ImageContrastCheck" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
