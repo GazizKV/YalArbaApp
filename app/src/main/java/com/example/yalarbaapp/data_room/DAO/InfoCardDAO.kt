@@ -1,5 +1,6 @@
 package com.example.yalarbaapp.data_room.DAO
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -9,7 +10,7 @@ import com.example.yalarbaapp.data_room.model.InfoCard
 @Dao
 interface InfoCardDAO {
     @Query("SELECT * FROM infocard")
-    fun getAll(): List<InfoCard>
+    fun getAll(): LiveData<List<InfoCard>>
 
     @Query("SELECT * FROM infocard WHERE uid IN (:cardid)")
     fun getByIds(cardid: IntArray): List<InfoCard>
@@ -19,6 +20,9 @@ interface InfoCardDAO {
 
     @Insert
     fun insertAll(vararg infocards: InfoCard)
+
+    @Insert
+    fun insert(infoCard: InfoCard)
 
     @Delete
     fun delete(infoCard: InfoCard)

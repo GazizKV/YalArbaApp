@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
 
+
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier2"
         android:layout_width="wrap_content"
@@ -102,7 +103,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo150x150"
         tools:ignore="ImageContrastCheck" />
-
 
 
 

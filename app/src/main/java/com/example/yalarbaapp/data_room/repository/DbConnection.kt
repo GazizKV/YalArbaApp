@@ -6,6 +6,6 @@ import com.example.yalarbaapp.data_room.DAO.InfoCardDAO
 import com.example.yalarbaapp.data_room.model.InfoCard
 
 @Database(entities = [InfoCard::class], version = 1)
-abstract class AppDatabase : RoomDatabase() {
+abstract class DbConnection : RoomDatabase() {
     abstract fun infoCardDAO(): InfoCardDAO
 }
